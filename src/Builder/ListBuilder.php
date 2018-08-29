@@ -146,7 +146,7 @@ class ListBuilder implements ListBuilderInterface
             throw new \RuntimeException(sprintf(
                 'Please define a type for field `%s` in `%s`',
                 $fieldDescription->getName(),
-                get_class($admin)
+                \get_class($admin)
             ));
         }
 
@@ -190,7 +190,7 @@ class ListBuilder implements ListBuilderInterface
 
         if ($metadata
             && $metadata->hasAssociation($fieldDescription->getName())
-            && in_array($fieldDescription->getMappingType(), $mappingTypes)
+            && \in_array($fieldDescription->getMappingType(), $mappingTypes)
         ) {
             $admin->attachAdminClass($fieldDescription);
         }

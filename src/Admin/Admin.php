@@ -112,7 +112,7 @@ class Admin extends AbstractAdmin
      */
     public function toString($object)
     {
-        if (!is_object($object)) {
+        if (!\is_object($object)) {
             return parent::toString($object);
         }
 
