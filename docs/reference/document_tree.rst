@@ -220,7 +220,7 @@ like this:
     .. code-block:: jinja
 
         {% render(controller(
-            'sonata.admin.doctrine_phpcr.tree_controller::treeAction',
+            'Sonata\DoctrinePHPCRAdminBundle\Controller\TreeController::tree',
              {
                 'root':     basePath ~ "/menu",
                 'selected': menuNodeId,
@@ -231,13 +231,17 @@ like this:
     .. code-block:: php
 
         <?php echo $view['actions']->render(new ControllerReference(
-                'sonata.admin.doctrine_phpcr.tree_controller::treeAction',
+                'Sonata\DoctrinePHPCRAdminBundle\Controller\TreeController::tree',
                 array(
                     'root'     => $basePath . '/menu',
                     'selected' => $menuNodeId,
                     '_locale'  => $app->getRequest()->getLocale()
                 ),
         )) ?>
+
+.. note::
+    To use the configuration for Symfony < 3.4 you you should use the single colon (:) notation to define controller
+    actions with the service id: ``sonata.admin.doctrine_phpcr.tree_controller:treeAction``
 
 .. _`CmfTreeBrowserBundle`: http://symfony.com/doc/master/cmf/bundles/tree_browser/introduction.html
 .. _`cmf-sandbox configuration`: https://github.com/symfony-cmf/cmf-sandbox/blob/master/app/config/config.yml
