@@ -21,4 +21,5 @@ return [
     Sonata\DoctrinePHPCRAdminBundle\SonataDoctrinePHPCRAdminBundle::class => ['all' => true],
     Symfony\Bundle\TwigBundle\TwigBundle::class => ['all' => true],
     Symfony\Cmf\Bundle\TreeBrowserBundle\CmfTreeBrowserBundle::class => ['all' => true],
+    Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle::class => ['all' => true],
 ];
