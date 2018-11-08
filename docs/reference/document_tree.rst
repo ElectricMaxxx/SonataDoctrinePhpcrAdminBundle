@@ -241,8 +241,10 @@ like this:
 
 .. note::
     To use the configuration for Symfony < 3.4 you should use the single colon (:) notation to define controller
-    actions: ``sonata.admin.doctrine_phpcr.tree_controller:treeAction``
+    actions: ``sonata.admin.doctrine_phpcr.tree_controller:treeAction``. Have a look at the `Symfony documentation`_
+    (here at the example for version 3.1).
 
 .. _`CmfTreeBrowserBundle`: http://symfony.com/doc/master/cmf/bundles/tree_browser/introduction.html
 .. _`cmf-sandbox configuration`: https://github.com/symfony-cmf/cmf-sandbox/blob/master/app/config/config.yml
 .. _`jsTree`: http://www.jstree.com/documentation
+.. _`Symfony documentation`: https://symfony.com/doc/3.1/controller/service.html#referring-to-the-service
