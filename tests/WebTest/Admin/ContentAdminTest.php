@@ -15,6 +15,7 @@ namespace Sonata\DoctrinePHPCRAdminBundle\Tests\WebTest\Admin;
 
 use Sonata\DoctrinePHPCRAdminBundle\Tests\Fixtures\App\DataFixtures\Phpcr\LoadTreeData;
 use Symfony\Cmf\Component\Testing\Functional\BaseTestCase;
+use Symfony\Component\HttpFoundation\Response;
 
 class ContentAdminTest extends BaseTestCase
 {
