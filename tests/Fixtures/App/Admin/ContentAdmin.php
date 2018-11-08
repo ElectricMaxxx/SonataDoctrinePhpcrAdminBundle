@@ -18,13 +18,13 @@ use Doctrine\Common\Persistence\ManagerRegistry;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
+use Sonata\AdminBundle\Form\Type\ModelType;
 use Sonata\AdminBundle\Show\ShowMapper;
-use Sonata\DoctrinePHPCRAdminBundle\Admin\Admin;
-use Sonata\DoctrinePHPCRAdminBundle\Tests\Fixtures\App\Document\Content;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Sonata\CoreBundle\Form\Type\CollectionType;
+use Sonata\DoctrinePHPCRAdminBundle\Admin\Admin;
+use Sonata\DoctrinePHPCRAdminBundle\Tests\Fixtures\App\Document\Content;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Sonata\AdminBundle\Form\Type\ModelType;
 use Symfony\Cmf\Bundle\TreeBrowserBundle\Form\Type\TreeSelectType;
 
 /**

@@ -240,7 +240,7 @@ like this:
         )) ?>
 
 .. note::
-    To use the configuration for Symfony < 3.4 you you should use the single colon (:) notation to define controller
+    To use the configuration for Symfony < 3.4 you should use the single colon (:) notation to define controller
     actions: ``sonata.admin.doctrine_phpcr.tree_controller:treeAction``
 
 .. _`CmfTreeBrowserBundle`: http://symfony.com/doc/master/cmf/bundles/tree_browser/introduction.html
