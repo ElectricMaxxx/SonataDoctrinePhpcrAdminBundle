@@ -53,7 +53,8 @@ class ChoiceType extends BaseChoiceType
 
         $builder
             ->add('type', SymfonyChoiceType::class, [
-                'choices' => $choices,
+                'choice_value' => array_keys($choices),
+                'choice_label' => $choices,
                 'required' => false,
             ])
             ->add('value', $options['field_type'], array_merge(['required' => false], $options['field_options']))
