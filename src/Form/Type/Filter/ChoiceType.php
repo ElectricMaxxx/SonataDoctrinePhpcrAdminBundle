@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace Sonata\DoctrinePHPCRAdminBundle\Form\Type\Filter;
 
+use function foo\func;
 use Sonata\AdminBundle\Form\Type\Filter\ChoiceType as BaseChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType as SymfonyChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -54,7 +55,9 @@ class ChoiceType extends BaseChoiceType
         $builder
             ->add('type', SymfonyChoiceType::class, [
                 'choice_value' => array_keys($choices),
-                'choice_label' => $choices,
+                'choice_label' => function ($key) use ($choices){
+                    return $choices[$key];
+                },
                 'required' => false,
             ])
             ->add('value', $options['field_type'], array_merge(['required' => false], $options['field_options']))
