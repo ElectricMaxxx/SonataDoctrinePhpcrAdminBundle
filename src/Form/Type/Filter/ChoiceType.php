@@ -13,7 +13,6 @@ declare(strict_types=1);
 
 namespace Sonata\DoctrinePHPCRAdminBundle\Form\Type\Filter;
 
-use function foo\func;
 use Sonata\AdminBundle\Form\Type\Filter\ChoiceType as BaseChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType as SymfonyChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
